@@ -1,33 +1,313 @@
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Hero {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 121, 63);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Logo {
+  width: 450px;
+  height: auto;
+}
+
+
+
+.About-section {
+  width: 100vw;
+  height: 600px;
+  overflow: hidden;
+  background-image: url('./images/aboutusBG.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.About-paper {
+  max-width: 700px;
+  max-height: 600px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Alegreya', serif;
+  background-color: #fff;
+  padding: 30px;
+  margin: 0;
+}
+
+.negrito {
+  font-weight: bold;
+}
+.About-title {
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 30px;
+}
+.About-subtitle, .About-text {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 36px;
+  letter-spacing: normal;
+}
+
+.Cursos-section {
+
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+
+  
+}
+
+.Cursoss {
+  background-color: #000;
+}
+
+.card-img {
+  width: 75% !important;
+}
+
+
+.Cursos-Grid {
+  width: 100vw;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-gap: 2em;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "thai compressa"
+  "reflexologia spa"
+  "Toksen Retiro"
+}
+
+.card {
+  border: none !important;
+}
+
+.cursothaiformacao {
+  grid-area: thai;
+  display: flex;
+  align-items: center;
+  margin: 3em 0 1em 0;
+
+}
+
+.compressa {
+  grid-area: compressa;
+  display: flex;
+  align-items: center;
+  margin: 3em 0 1em 0;
+}
+
+.reflexologia {
+  grid-area: reflexologia;
+  display: flex;
+  align-items: center;
+  margin: .5em 0 1em 0;
+}
+
+.spa{
+  grid-area: spa;
+  display: flex;
+  align-items: center;
+  margin: .5em 0 1em 0;
+}
+
+.Toksen {
+  grid-area: Toksen;
+  display: flex;
+  align-items: center;
+  margin: .5em 0 1em 0;
+}
+
+.retiro {
+  grid-area: Retiro;
+  display: flex;
+  align-items: center;
+  margin: .5em 0 1em 0;
+
+}
+
+.Nos-section {
+  padding: 50px;
+  background-image: url('./images/Wat\ Po\ Massage\ 2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  font-family: 'Alegreya', serif;
+  
+}
+
+.Nos-prof {
+  overflow: hidden;
+  background-color: white;
+  height: 500px;
+}
+.imageTab {
+  margin-top: 3em;
+  max-height: 400px;
+  width: auto;
+  margin: 1em 1em;
+}
+
+.professor {
+  
+  font-family: 'Alegreya', serif;
+  font-size: 1em;
+}
+
+
+
+.NosContent {
+ margin-bottom: 0!important;
+}
+.Nos_paper {
+  background-color: #fff;
+  padding: 30px;  
+}
+
+.nos-footer {
+  width: auto;
+  height: auto;
+  background-color: white;
+}
+
+.ico-cert {
+  width: 90px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+
+.viagem-section {
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  background-image: url('./images//budas.jpg');
+  background-position: center;
+  background-size: cover
+
+}
+
+.viagem-content {
+  background-color: #fff;
+  padding: 3em;
+  margin: 4rem;
+  font-family: 'Alegreya', serif;
+  line-height: 30px;
+}
+
+.Viagem-text {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 36px;
+  letter-spacing: normal;
+}
+
+.cursothaiformacao:hover .overlay {
+  opacity: 1;
+}
+
+.compressa:hover .overlay {
+  opacity: 1;
+}
+
+.reflexologia:hover .overlay {
+  opacity: 1;
+}
+
+.spa:hover .overlay {
+  opacity: 1;
+}
+
+.Toksen:hover .overlay {
+  opacity: 1;
+}
+
+.retiro:hover .overlay {
+  opacity: 1;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:  rgb(255, 121, 63);
+}
+
+.overlay-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FaleConosco-section {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(255, 121, 63);
+}
+
+.FaleConosco-content {
   color: white;
+  margin: 0 1em 0 1em;
+  padding: 3em;
 }
 
-.App-link {
-  color: #61dafb;
+.FaleConosco-Btn {
+  background-color: rgb(99, 188, 147) !important;
+  border: 1px solid white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Rodape-section {
+  width: 100vw;
+  height: 180px;
+  background-color: rgb(99, 188, 147); 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+
 }
+
+.social-icons {
+  margin-top: 3em;
+}
+
+.copyright{
+  font-size: 1.2em;
+}
+
+

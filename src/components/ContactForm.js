@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Container, Col} from 'reactstrap'
 
 const encode = (data) => {
     return Object.keys(data)
@@ -31,26 +32,21 @@ class ContactForm extends Component {
     render() {
         const { name, email, message } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
-                <p>
-                    <label>
-                        Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Message: <textarea name="message" value={message} onChange={this.handleChange} />
-                    </label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
+            <Container>
+                <form onSubmit={this.handleSubmit}>
+                    <Col x="12" md={{ size: 6, offset: 3 }} className="FaleConosco-content">
+                        <input type="text" placeholder="Nome" name="name" value={name} onChange={this.handleChange} />
+                        <input type="email" placeholder="Email" name="email" value={email} onChange={this.handleChange} />
+                    </Col>
+
+                    <Col x="12" md={{ size: 6, offset: 3 }} className="FaleConosco-content">
+                        <textarea name="message" rows="5" placeholder="Mensagem" value={message} onChange={this.handleChange} />
+                    </Col>
+
+                    <button type="submit" className="FaleConosco-Btn">Enviar</button>
+
+                </form>
+            </Container>
         );
     }
 }

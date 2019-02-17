@@ -7,7 +7,6 @@ function FaleConosco() {
     <Container  fluid id="FaleConosco-section">
       <div className="FaleConosco-content">
           <h2 className="FaleConosco-title">Fale Conosco</h2>
-             
               <ContactForm />
               
     </div></Container>            

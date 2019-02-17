@@ -45,17 +45,12 @@
 
 .About-section {
   
+   width: 100vw;
   height: auto;
-  overflow: hidden;
+  padding: 20px;
   background-image: url('./images/aboutusBG.jpg');
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex; 
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  background-size: cover
 
 }
 

@@ -6,7 +6,7 @@ function FaleConosco() {
     <Container  fluid id="FaleConosco-section">
       <div className="FaleConosco-content">
           <h2 className="FaleConosco-title">Fale Conosco</h2>
-              <Form name="faleconosco" method="POST" data-netlify="true">
+              <Form name="faleconosco" method="POST" netlify>
                  <Container>
                       <Row form>
                           <Col sm="12" md={{size: 3, offset:3}}>
@@ -27,7 +27,8 @@ function FaleConosco() {
                           
                           <Col md={{ size: 4, offset: 4 }}>
                               <FormGroup>
-                                  <Button size="lg" block className="FaleConosco-Btn">Enviar</Button>
+                                  <button type="submit" className="FaleConosco-Btn">Send</button>
+                                  {/* <Button size="lg" block >Enviar</Button> */}
                               </FormGroup>
                           </Col>
 

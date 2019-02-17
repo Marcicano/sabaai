@@ -67,7 +67,7 @@
   justify-content: center;
   font-family: 'Alegreya', serif;
   background-color: #fff;
-  padding: 2em 0 2em 0;
+  padding: 5em;
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -76,15 +76,16 @@
   font-weight: bold;
 }
 .About-title {
-  padding-top: 2em;
   line-height: 36px;
   font-weight: 400;
   font-size: 30px;
 }
 .About-subtitle, .About-text {
   font-family: 'Open Sans', sans-serif;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: left;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 200;
   line-height: 36px;
   letter-spacing: normal;

@@ -214,10 +214,16 @@
 
 .viagem-content {
   background-color: #fff;
+  height: auto;
   padding: 3em;
-  margin: 4rem;
   font-family: 'Alegreya', serif;
   line-height: 30px;
+}
+
+.Viagem-title {
+  font-family: 'Alegreya', serif;
+  line-height: 30px;
+  margin-bottom: 1em;
 }
 
 .Viagem-text {
@@ -318,3 +324,69 @@
 }
 
 
+.Prof-content {
+  border-radius: 10px;
+  padding: 2em;
+  background-color: #fff;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "prof-photo prof-title"
+  "prof-photo prof-title"
+  "prof-footer prof-footer"
+}
+
+.Prof-photo {
+  grid-area: prof-photo;
+  max-width: 300px;
+  height: auto;
+  width: auto;
+}
+
+.Prof-title {
+  grid-area: prof-title;
+}
+
+.Prof-footer {
+  grid-area: prof-footer;
+
+}
+
+.prof-tab-custom {
+    border: 1px solid white !important;
+    border-radius: 4px 4px 0 0 !important;
+    color: white !important;
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Prof-content {
+  border-radius: 10px;
+  
+  background-color: orange;
+  display: grid;
+
+  justify-items: center;
+  grid-template-columns:  1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "prof-title"
+  "prof-footer"
+}
+
+.imageTab {
+  visibility: hidden;
+}
+
+.Prof-title {
+  grid-area: prof-title;
+}
+
+.Prof-footer {
+  grid-area: prof-footer;
+
+}
+
+ }

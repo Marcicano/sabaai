@@ -3,7 +3,7 @@ import {Container,Col, Button, Form, FormGroup, Input, Row } from 'reactstrap';
 
 function FaleConosco() {
   return (
-    <div className="FaleConosco-section">
+    <Container  fluid className="FaleConosco-section">
       <div className="FaleConosco-content">
           <h2 className="FaleConosco-title">Fale Conosco</h2>
               <Form>
@@ -36,7 +36,7 @@ function FaleConosco() {
                  </Container>
                   </Form>
       </div>
-    </div>
+    </Container>
   )
 }
 

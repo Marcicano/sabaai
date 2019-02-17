@@ -1,8 +1,10 @@
 import React from 'react'
+import {Container} from 'reactstrap'
+
 
 function Footer() {
   return (
-    <footer className="Rodape-section">
+    <Container fluid className="Rodape-section">
       <div className="social-icons">
         <i className="fab fa-instagram"></i>
         <i className="fab fa-facebook-f"></i>
@@ -13,7 +15,7 @@ function Footer() {
           Copyright © 2019 SABAAI.
         
       </div>
-    </footer>
+    </Container>
   )
 }
 

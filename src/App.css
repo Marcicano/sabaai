@@ -8,14 +8,26 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(255, 121, 63);
+  padding: 0 !important;
 }
 
 .Logo {
-  max-width: 400px;
+  width: 500px;
   height: auto;
 }
 
+.navbar {
+  width: 100% !important;
+}
 
+.logoSmall {
+  width: 30px;
+  height: auto;
+}
+
+.Menu-link {
+  color: rgb(255, 121, 63) !important;
+}
 
 .About-section {
   
@@ -216,6 +228,7 @@
   padding: 3em;
   font-family: 'Alegreya', serif;
   line-height: 30px;
+  border-radius: 10px;
 }
 
 .Viagem-title {
@@ -359,10 +372,13 @@
 }
 
 
+/* resposive */
+
 @media (min-width: 276px) and (max-width: 767.98px) {
   .Prof-content {
+    overflow: hidden;
   border-radius: 10px;
-  padding: 2em;
+  /* padding: 2em; */
   background-color: #fff;
   display: grid;
   justify-items: center;
@@ -374,9 +390,10 @@
   "prof-footer"
   
 }
+
 .imageTab {
   /* visibility: hidden; */
-  width: auto;
+  min-width: 20px;
 }
 
 .Prof-title {
@@ -387,5 +404,12 @@
   grid-area: prof-footer;
 
 }
+
+.Logo {
+  width: 300px;
+  height: auto;
+}
+
+
 
  }

@@ -6,6 +6,7 @@ import Nos from './Nos'
 import Viagem from './Viagem'
 import FaleConosco from './FaleConosco'
 import Footer from './Footer'
+
  
 
 export class Home extends Component {

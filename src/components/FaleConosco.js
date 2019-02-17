@@ -6,7 +6,7 @@ function FaleConosco() {
     <Container  fluid id="FaleConosco-section">
       <div className="FaleConosco-content">
           <h2 className="FaleConosco-title">Fale Conosco</h2>
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="post">
                   <p>
                       <label>Your Name: <input type="text" name="name" /></label>
                   </p>

@@ -11,15 +11,15 @@
 }
 
 .Logo {
-  width: 450px;
+  max-width: 400px;
   height: auto;
 }
 
 
 
 .About-section {
-  width: 100vw;
-  height: 600px;
+  
+  height: auto;
   overflow: hidden;
   background-image: url('./images/aboutusBG.jpg');
   background-attachment: fixed;
@@ -35,24 +35,22 @@
 
 
 .About-paper {
-  max-width: 700px;
-  max-height: 600px;
-  margin: 20px;
-  padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: 'Alegreya', serif;
   background-color: #fff;
-  padding: 30px;
-  margin: 0;
+  padding: 2em 0 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .negrito {
   font-weight: bold;
 }
 .About-title {
+  padding-top: 2em;
   line-height: 36px;
   font-weight: 400;
   font-size: 30px;
@@ -364,20 +362,21 @@
 @media (min-width: 276px) and (max-width: 767.98px) {
   .Prof-content {
   border-radius: 10px;
-  
-  background-color: orange;
+  padding: 2em;
+  background-color: #fff;
   display: grid;
-
   justify-items: center;
-  grid-template-columns:  1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: 
+  "prof-photo"
   "prof-title"
   "prof-footer"
+  
 }
-
 .imageTab {
-  visibility: hidden;
+  /* visibility: hidden; */
+  width: auto;
 }
 
 .Prof-title {

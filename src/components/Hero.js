@@ -5,8 +5,8 @@ function Hero() {
   return (
       <div className="Hero-section">
           <Container fluid>
-              <Row fluid>
-                  <Col className="Hero" xs="12">
+              <Row>
+                  <Col className="Hero">
                       <img className="Logo" alt="sabaai" src={Logo} />
                   </Col>
               </Row>

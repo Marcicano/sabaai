@@ -9,17 +9,17 @@ function FaleConosco() {
               <Form>
                  <Container>
                       <Row form>
-                          <Col md={{size: 3, offset:3}}>
+                          <Col sm="12" md={{size: 3, offset:3}}>
                               <FormGroup>
                                   <Input size="lg" type="email" name="email" id="exampleEmail" placeholder="Nome" />
                               </FormGroup>
                           </Col>
-                          <Col md={3}>
+                          <Col sm="12" md={3}>
                               <FormGroup>
                                   <Input size="lg" type="password" name="password" id="examplePassword" placeholder="Email" />
                               </FormGroup>
                           </Col>
-                          <Col md={{size: 6, offset: 3}}>
+                          <Col sm="12" md={{size: 6, offset: 3}}>
                               <FormGroup>
                                   <Input   rows="5" type="textarea" name="text" id="exampleText" placeholder="Mensagem" />
                               </FormGroup>

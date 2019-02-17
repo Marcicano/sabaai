@@ -7,36 +7,26 @@ function FaleConosco() {
       <div className="FaleConosco-content">
           <h2 className="FaleConosco-title">Fale Conosco</h2>
               <form name="contact" method="POST" data-netlify="true">
-                 <Container>
-                      <Row form>
-                          <Col sm="12" md={{size: 3, offset:3}}>
-                              <FormGroup>
-                                  <Input size="lg" type="text" name="name" id="name" placeholder="Nome" />
-                              </FormGroup>
-                          </Col>
-                          <Col sm="12" md={3}>
-                              <FormGroup>
-                                  <Input size="lg" type="email" name="email" id="email" placeholder="Email" />
-                              </FormGroup>
-                          </Col>
-                          <Col sm="12" md={{size: 6, offset: 3}}>
-                              <FormGroup>
-                                  <Input   rows="5" type="textarea" name="Messagem" id="exampleText" placeholder="Mensagem" />
-                              </FormGroup>
-                          </Col>
-                          
-                          <Col md={{ size: 4, offset: 4 }}>
-                              <FormGroup>
-                                  <input type="submit" value="Enviar"></input>
-                              </FormGroup>
-                          </Col>
-
-                         
-                      </Row>
-                 </Container>
-                  </form>
-      </div>
-    </Container>
+                  <p>
+                      <label>Your Name: <input type="text" name="name" /></label>
+                  </p>
+                  <p>
+                      <label>Your Email: <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                      <label>Your Role: <select name="role[]" multiple>
+                          <option value="leader">Leader</option>
+                          <option value="follower">Follower</option>
+                      </select></label>
+                  </p>
+                  <p>
+                      <label>Message: <textarea name="message"></textarea></label>
+                  </p>
+                  <p>
+                      <button type="submit">Send</button>
+                  </p>
+              </form>
+    </div></Container>            
   )
 }
 

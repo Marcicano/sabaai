@@ -28,7 +28,7 @@ export default class Nos extends React.Component {
         }
     }
     render() {
-        return (<Container fluid className="Nos-section">
+        return (<Container id="nos-section" fluid>
                     <div className="section-overlay">
                         <Container>
                             <Col sm="12" md={{ size: 8, offset: 2 }} className="NosContent">

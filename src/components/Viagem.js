@@ -3,7 +3,7 @@ import {Container, Col, Row} from 'reactstrap'
 
 function Viagem() {
   return (
-    <Container className="viagem-section" fluid>
+    <Container id="viagem-section" fluid>
       <Container>
         <Row>
           <Col sm="12" md={{ size: 6, offset: 3 }} className="viagem-content">

@@ -3,25 +3,25 @@ import {Container,Col, Button, Form, FormGroup, Input, Row } from 'reactstrap';
 
 function FaleConosco() {
   return (
-    <Container  fluid className="FaleConosco-section">
+    <Container  fluid id="FaleConosco-section">
       <div className="FaleConosco-content">
           <h2 className="FaleConosco-title">Fale Conosco</h2>
-              <Form>
+              <Form name="faleconosco" method="POST" data-netlify="true">
                  <Container>
                       <Row form>
                           <Col sm="12" md={{size: 3, offset:3}}>
                               <FormGroup>
-                                  <Input size="lg" type="email" name="email" id="exampleEmail" placeholder="Nome" />
+                                  <Input size="lg" type="text" name="name" id="name" placeholder="Nome" />
                               </FormGroup>
                           </Col>
                           <Col sm="12" md={3}>
                               <FormGroup>
-                                  <Input size="lg" type="password" name="password" id="examplePassword" placeholder="Email" />
+                                  <Input size="lg" type="email" name="email" id="email" placeholder="Email" />
                               </FormGroup>
                           </Col>
                           <Col sm="12" md={{size: 6, offset: 3}}>
                               <FormGroup>
-                                  <Input   rows="5" type="textarea" name="text" id="exampleText" placeholder="Mensagem" />
+                                  <Input   rows="5" type="textarea" name="Messagem" id="exampleText" placeholder="Mensagem" />
                               </FormGroup>
                           </Col>
                           

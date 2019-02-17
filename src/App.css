@@ -7,7 +7,7 @@
 .Hero {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(255, 121, 63);
+  background-color: #ff793f;
   padding: 0 !important;
 }
 
@@ -20,14 +20,28 @@
   width: 100% !important;
 }
 
+
+
+.Menu {
+  color: orange !important;
+  font-family: 'Alegreya', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 2em 0 2em;
+  padding: 0 !important;
+}
+
+.Menup {
+  position: fixed !important;
+  padding: 0 !important;
+  z-index: 10;
+}
 .logoSmall {
   width: 30px;
   height: auto;
 }
 
-.Menu-link {
-  color: rgb(255, 121, 63) !important;
-}
+
 
 .About-section {
   
@@ -159,7 +173,7 @@
 
 }
 
-.Nos-section {
+#nos-section {
   padding: 50px;
   background-image: url('./images/Wat\ Po\ Massage\ 2.jpg');
   background-attachment: fixed;
@@ -212,7 +226,7 @@
 }
 
 
-.viagem-section {
+#viagem-section {
   width: 100vw;
   height: auto;
   padding: 20px;
@@ -291,7 +305,7 @@
   align-items: center;
 }
 
-.FaleConosco-section {
+#FaleConosco-section {
   width: 100vw;
   height: auto;
   background-color: rgb(255, 121, 63);

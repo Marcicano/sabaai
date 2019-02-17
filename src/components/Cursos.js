@@ -11,7 +11,7 @@ import retiro from '../images/retiro-teresopolis.png'
 export class Cursos extends Component {
   render() {
     return (
-      <Container fluid>
+      <Container id="cursos-section" fluid>
           <Row fluid>
                 <Col sm="12" md="6">
                     <Card inverse className="cursothaiformacao">

@@ -12,7 +12,7 @@ import Footer from './Footer'
 export class Home extends Component {
   render() {
     return (
-      <div className="HomePage">
+      <div className="HomePage" id="HomePage">
         <Hero />
         <About />
         <Cursos />

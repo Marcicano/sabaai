@@ -6,7 +6,7 @@ function FaleConosco() {
     <Container  fluid id="FaleConosco-section">
       <div className="FaleConosco-content">
           <h2 className="FaleConosco-title">Fale Conosco</h2>
-              <Form name="faleconosco" method="POST" netlify>
+              <form name="contact" method="POST" data-netlify="true">
                  <Container>
                       <Row form>
                           <Col sm="12" md={{size: 3, offset:3}}>
@@ -35,7 +35,7 @@ function FaleConosco() {
                          
                       </Row>
                  </Container>
-                  </Form>
+                  </form>
       </div>
     </Container>
   )

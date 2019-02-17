@@ -27,8 +27,7 @@ function FaleConosco() {
                           
                           <Col md={{ size: 4, offset: 4 }}>
                               <FormGroup>
-                                  <button type="submit" className="FaleConosco-Btn">Send</button>
-                                  {/* <Button size="lg" block >Enviar</Button> */}
+                                  <input type="submit" value="Enviar"></input>
                               </FormGroup>
                           </Col>
 

@@ -90,8 +90,6 @@
 
   width: 100vw;
   height: auto;
-  margin: 0;
-  padding: 0;
   background-color: #000;
 
   
@@ -108,7 +106,7 @@
 
 .Cursos-Grid {
   width: 100vw;
-  margin-top: 2em;
+  
   margin-bottom: 2em;
   grid-gap: 2em;
   display: grid;
@@ -129,7 +127,7 @@
   grid-area: thai;
   display: flex;
   align-items: center;
-  margin: 3em 0 1em 0;
+  padding: 3em 0 1em 0;
 
 }
 
@@ -137,35 +135,35 @@
   grid-area: compressa;
   display: flex;
   align-items: center;
-  margin: 3em 0 1em 0;
+  padding: 3em 0 1em 0;
 }
 
 .reflexologia {
   grid-area: reflexologia;
   display: flex;
   align-items: center;
-  margin: .5em 0 1em 0;
+  padding: .5em 0 1em 0;
 }
 
 .spa{
   grid-area: spa;
   display: flex;
   align-items: center;
-  margin: .5em 0 1em 0;
+  padding: .5em 0 1em 0;
 }
 
 .Toksen {
   grid-area: Toksen;
   display: flex;
   align-items: center;
-  margin: .5em 0 1em 0;
+  padding: .5em 0 1em 0;
 }
 
 .retiro {
   grid-area: Retiro;
   display: flex;
   align-items: center;
-  margin: .5em 0 1em 0;
+  padding: .5em 0 1em 0;
 
 }
 
@@ -449,6 +447,9 @@
   height: auto;
 }
 
+.overlay-title{
+  font-size: 1.5em;
+}
 
 
  }

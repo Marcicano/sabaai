@@ -12,13 +12,13 @@ export class Cursos extends Component {
   render() {
     return (
       <Container id="cursos-section" fluid>
-          <Row fluid>
+          <Row>
                 <Col sm="12" md="6">
                     <Card inverse className="cursothaiformacao">
                         <CardImg width="100%" src={thaimassagem} alt="Card image cap" />
                         <div className="overlay">
                             <CardImgOverlay className="overlay-text">
-                                <CardTitle><h1>Thai Massagem</h1></CardTitle>
+                                <CardTitle><h2 className="overlay-title">Thai Massagem</h2></CardTitle>
                                 <CardText>Vitória - Rio - Belo Horizonte - São Paulo - Curitiba - Brasília - Salvador - Recife - Fortaleza</CardText>
                             </CardImgOverlay>
                         </div>
@@ -30,7 +30,7 @@ export class Cursos extends Component {
         <CardImg width="100%" src={compressa} alt="Card image cap" />
         <div className="overlay">  
                             <CardImgOverlay className="overlay-text">
-                <CardTitle><h1>Thai Massagem com compressa de ervas</h1></CardTitle>
+                                <CardTitle><h1 className="overlay-title">Thai Massagem com compressa de ervas</h1></CardTitle>
                 <CardText>Vitória - Rio - Belo Horizonte - São Paulo - Curitiba - Brasília - Salvador - Recife - Fortaleza</CardText>
 
              </CardImgOverlay>         </div>     </Card>
@@ -39,7 +39,7 @@ export class Cursos extends Component {
                         <CardImg width="100%" src={reflex} alt="Card image cap" />
                         <div className="overlay">
                             <CardImgOverlay className="overlay-text">
-                                <CardTitle><h1>Reflexologia Podal</h1></CardTitle>
+                                <CardTitle><h1 className="overlay-title">Reflexologia Podal</h1></CardTitle>
                                 <CardText>Vitória - Rio - Belo Horizonte - São Paulo - Curitiba - Brasília - Salvador - Recife - Fortaleza</CardText>
 
                             </CardImgOverlay>
@@ -53,7 +53,7 @@ export class Cursos extends Component {
          <CardImg width="100%" src={spa} alt="Card image cap" />
          <div className="overlay">
                             <CardImgOverlay className="overlay-text">
-                 <CardTitle><h1> Spa Tailandes</h1></CardTitle>
+                                <CardTitle><h1 className="overlay-title"> Spa Tailandes</h1></CardTitle>
                  <CardText>Vitória - Rio - Belo Horizonte - São Paulo - Curitiba - Brasília - Salvador - Recife - Fortaleza</CardText>
 
              </CardImgOverlay>
@@ -67,7 +67,7 @@ export class Cursos extends Component {
                         <CardImg width="100%" src={Toksen} alt="Card image cap" />
                         <div className="overlay">
                             <CardImgOverlay className="overlay-text">
-                                <CardTitle><h1>Tok Sen</h1></CardTitle>
+                                <CardTitle><h1 className="overlay-title">Tok Sen</h1></CardTitle>
                                 <CardText>Vitória - Rio - Belo Horizonte - São Paulo - Curitiba - Brasília - Salvador - Recife - Fortaleza</CardText>
 
                             </CardImgOverlay>
@@ -82,7 +82,7 @@ export class Cursos extends Component {
          <CardImg width="100%" src={retiro} alt="Card image cap" />
          <div className="overlay">
                             <CardImgOverlay className="overlay-text">
-                <CardTitle><h1>Retiro</h1></CardTitle>
+                <CardTitle><h1 className="overlay-title">Retiro</h1></CardTitle>
                                 <CardText>Teresópolis - Búzios</CardText>
 
              </CardImgOverlay>

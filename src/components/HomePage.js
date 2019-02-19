@@ -6,7 +6,7 @@ import Nos from './Nos'
 import Viagem from './Viagem'
 import FaleConosco from './FaleConosco'
 
-
+import Prof from './Prof'
  
 
 export class Home extends Component {
@@ -16,9 +16,10 @@ export class Home extends Component {
         <Hero />
         <About />
         <Cursos />
-        <Nos />
+        <Prof />
         <Viagem />
         <FaleConosco />
+        
       </div>
       
     )

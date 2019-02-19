@@ -9,6 +9,7 @@ import Compressa from '../components/Compressa'
 import SpaThaiPage from '../components/SpaThaiPage'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+import FichaInscri from "../components/FichaInscri"
 
 const SabaaiRouter = () => (
     <BrowserRouter>
@@ -22,6 +23,7 @@ const SabaaiRouter = () => (
                 <Route path="/curso-spa" component={SpaThaiPage} />
                 <Route path="/curso-toksen" component={TokSenPage} />
                 <Route path="/retiro" component={RetiroPage} />
+                <Route path="/ficha-inscricao" component={FichaInscri} />
                 
             </Switch>
             <Footer />

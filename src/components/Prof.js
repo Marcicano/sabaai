@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Col } from 'reactstrap';
 import classnames from 'classnames';
 import marcicano from '../images/marcicano.jpg'
@@ -10,7 +10,8 @@ import logo4 from '../images/logo4.jpg'
 import logo5 from '../images/logo5.jpg'
 import logo6 from '../images/logo6.jpg'
 
-export default class Nos extends React.Component {
+
+export class Prof extends Component {
     constructor(props) {
         super(props);
 
@@ -27,39 +28,39 @@ export default class Nos extends React.Component {
             });
         }
     }
-    render() {
-        return (<Container id="nos-section" fluid>
-                    <div className="section-overlay">
-                        <Container>
-                            <Col sm="12" md={{ size: 8, offset: 2 }} className="NosContent">
-                                <Nav md="8" tabs>
-                            <NavItem className="prof-tab-custom">
-                                        <NavLink
-                                            className={classnames({ active: this.state.activeTab === '1' })}
-                                            onClick={() => { this.toggle('1'); }}
-                                        >
-                                            <span className="professor">
-                                                Prof. Anderson Marcicano
+  render() {
+    return (
+      <Container id = "nos-section" fluid>
+            <Container>
+                <Col sm="12" md={{ size: 8, offset: 2 }} className="NosContent">
+                    <Nav md="8" tabs>
+                        <NavItem className="prof-tab-custom">
+                            <NavLink
+                                className={classnames({ active: this.state.activeTab === '1' })}
+                                onClick={() => { this.toggle('1'); }}
+                            >
+                                <span className="professor">
+                                    Prof. Anderson Marcicano
                                             </span>
-                                        </NavLink>
-                                    </NavItem>
-                            <NavItem className="prof-tab-custom">
-                                        <NavLink
-                                            className={classnames({ active: this.state.activeTab === '2' })}
-                                            onClick={() => { this.toggle('2'); }}
-                                        >
+                            </NavLink>
+                        </NavItem>
+                        <NavItem className="prof-tab-custom">
+                            <NavLink
+                                className={classnames({ active: this.state.activeTab === '2' })}
+                                onClick={() => { this.toggle('2'); }}
+                            >
 
-                                    <span className="professor">
-                                        Prof. Roberto Saraiva
+                                <span className="professor">
+                                    Prof. Roberto Saraiva
                                             </span>
-                                            
-                                        </NavLink>
-                                    </NavItem>
-                                </Nav>
-                            </Col>
-                            <TabContent activeTab={this.state.activeTab}>
-                                <TabPane tabId="1">
-                                    <Col sm="12" className="Prof-content" md={{ size: 8, offset: 2 }}>
+
+                            </NavLink>
+                        </NavItem>
+                    </Nav>
+                
+                    <TabContent activeTab={this.state.activeTab}>
+                        <TabPane tabId="1">
+                            <Col className="Prof-content">
                                 <div className="Prof-photo">
                                     <img src={marcicano} className="imageTab" alt="Prof. Anderson" />
                                 </div>
@@ -71,18 +72,18 @@ export default class Nos extends React.Component {
 </p>
                                 </div>
                                 <div className="Prof-footer">
-                                    <img src={logo1} className="ico-cert" alt="Certificacao" />  
-                                     <img src={logo2} className="ico-cert"  alt="Certificacao"/>  
-                                    <img src={logo3} className="ico-cert" alt="Certificacao" />  
-                                     <img src={logo4} className="ico-cert"  alt="Certificacao"/>  
-                                    <img src={logo5} className="ico-cert" alt="Certificacao" />  
-                                    <img src={logo6} className="ico-cert" alt="Certificacao" />  
+                                    <img src={logo1} className="ico-cert" alt="Certificacao" />
+                                    <img src={logo2} className="ico-cert" alt="Certificacao" />
+                                    <img src={logo3} className="ico-cert" alt="Certificacao" />
+                                    <img src={logo4} className="ico-cert" alt="Certificacao" />
+                                    <img src={logo5} className="ico-cert" alt="Certificacao" />
+                                    <img src={logo6} className="ico-cert" alt="Certificacao" />
                                 </div>
-                                    </Col> 
-                                    
-                                </TabPane>
-                                <TabPane tabId="2">
-                            <Col sm="12" className="Prof-content" md={{ size: 8, offset: 2 }}>
+                            </Col>
+
+                        </TabPane>
+                        <TabPane tabId="2">
+                            <Col sm="12" className="Prof-content" >
                                 <div className="Prof-photo">
                                     <img src={roberto} className="imageTab" alt="Prof. Roberto" />
                                 </div>
@@ -93,12 +94,15 @@ export default class Nos extends React.Component {
                                         O interesse pela Thai Massage surgiu logo depois, e fez cursos em algumas das principais escolas da Tailândia, como TMC, Old Medicine Hospital e ONG’s, além de aulas com mestres locais. Lá também teve contato com a Rusie Dutton, o Yoga tailandês, usado tanto como preparação corporal para o terapeuta de Thai Massage quanto como atividade independente.
 </p>
                                 </div>
-                            </Col> 
-                                </TabPane>
-                            </TabContent>
-                        </Container>
-                    </div>
+                            </Col>
+                        </TabPane>
+                    </TabContent>
+                    </Col>
+                
                 </Container>
-        );
-    }
+      </Container>
+    )
+  }
 }
+
+export default Prof

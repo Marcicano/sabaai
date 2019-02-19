@@ -403,7 +403,7 @@ h5 {
 
 
 .Prof-content {
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   padding: 2em;
   background-color: #fff;
   display: grid;
@@ -420,7 +420,7 @@ h5 {
   grid-area: prof-photo;
   max-width: 300px;
   height: auto;
-  width: auto;
+  
 }
 
 .Prof-title {
@@ -472,7 +472,7 @@ h5 {
 
 @media (min-width: 276px) and (max-width: 767.98px) {
   .Prof-content {
-    overflow: hidden;
+  overflow: hidden;
   border-radius: 10px;
   /* padding: 2em; */
   background-color: #fff;

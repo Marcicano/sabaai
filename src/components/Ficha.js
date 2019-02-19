@@ -45,7 +45,7 @@ export class Ficha extends Component {
                         <input type="text" placeholder="Nome" name="name" value={name} onChange={this.handleChange} />
                         <input type="email" placeholder="Email" name="email" value={email} onChange={this.handleChange} />
                         <input type="date" placeholder="Nome" name="dtnasc" value={dtnasc} onChange={this.handleChange} />
-                        <input type="text" placeholder="cpf" name="email" value={cpf} onChange={this.handleChange} />
+                        <input type="text" placeholder="cpf" name="cpf" value={cpf} onChange={this.handleChange} />
                         <input type="text" placeholder="endereco" name="endereco" value={endereco} onChange={this.handleChange} />
                         <input type="text" placeholder="bairro" name="bairro" value={bairro} onChange={this.handleChange} />
                         <input type="text" placeholder="cidade" name="cidade" value={cidade} onChange={this.handleChange} />

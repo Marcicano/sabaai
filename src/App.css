@@ -408,6 +408,28 @@
     color: white !important;
 }
 
+.banner-curso {
+  background-color: orange !important;
+  font-family: 'Alegreya', serif;
+  color: white;
+  
+}
+
+.Page-Section {
+  padding: 0 !important;
+}
+
+#conteudoTabCurso {
+  border: 1px solid #dee2e6;
+  padding: 2em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+  font-size: 1em;
+}
+
+#conteudoTabCurso > p {
+ text-align: left;
+}
 
 /* resposive */
 

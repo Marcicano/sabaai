@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactForm from './ContactForm'
-import {Container,Col, Button, Form, FormGroup, Input, Row } from 'reactstrap';
+import {Container } from 'reactstrap';
 
 function FaleConosco() {
   return (

@@ -179,6 +179,35 @@
   
 }
 
+.pre-insc {
+
+  background-color: #ff793f;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  
+
+}
+
+h5 {
+  text-align: center;
+}
+.Prox-Cursos-destaque{
+  color: orange;
+  font-family: 'Alegreya', serif;
+  font-size: 1em;
+}
+
+.Prox-Cursos-destaque {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.Prox-Cursos-info {
+  margin-bottom: 4em;
+}
+
 .Nos-prof {
   overflow: hidden;
   background-color: white;
@@ -329,8 +358,9 @@
 }
 
 
+
 .FaleConosco-Btn {
-  background-color: rgb(99, 188, 147) !important;
+  background-color: #63bc93 !important;
   border: 1px solid white !important;
   border: none;
   cursor: pointer;
@@ -402,6 +432,8 @@
 
 }
 
+
+
 .prof-tab-custom {
     border: 1px solid white !important;
     border-radius: 4px 4px 0 0 !important;
@@ -409,9 +441,13 @@
 }
 
 .banner-curso {
-  background-color: orange !important;
+  background-color: #ff793f!important;
   font-family: 'Alegreya', serif;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
 }
 
@@ -425,6 +461,7 @@
   font-family: 'Open Sans', sans-serif;
   line-height: 30px;
   font-size: 1em;
+  margin-bottom: 3em;
 }
 
 #conteudoTabCurso > p {

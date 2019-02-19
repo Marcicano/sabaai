@@ -6,6 +6,8 @@ import reflex from '../images/reflexologia.png'
 import spa from '../images/spa-tailandes.png'
 import Toksen from '../images/toksen.png'
 import retiro from '../images/retiro-teresopolis.png'
+import {Link} from 'react-router-dom'
+
 
 
 export class Cursos extends Component {
@@ -14,6 +16,7 @@ export class Cursos extends Component {
       <Container id="cursos-section" fluid>
           <Row>
                 <Col sm="12" md="6">
+                    <Link to="/curso-thaimassagem">
                     <Card inverse className="cursothaiformacao">
                         <CardImg width="100%" src={thaimassagem} alt="Card image cap" />
                         <div className="overlay">
@@ -23,9 +26,11 @@ export class Cursos extends Component {
                             </CardImgOverlay>
                         </div>
                     </Card>
+                    </Link>
                 </Col>
 
                 <Col sm="12" md="6">
+                    <Link to="/curso-compressa">
                     <Card inverse className="compressa">
         <CardImg width="100%" src={compressa} alt="Card image cap" />
         <div className="overlay">  
@@ -34,7 +39,10 @@ export class Cursos extends Component {
                 <CardText>Vitória - Rio - Belo Horizonte - São Paulo - Curitiba - Brasília - Salvador - Recife - Fortaleza</CardText>
 
              </CardImgOverlay>         </div>     </Card>
-                </Col> <Col sm="12" md="6">
+                    </Link>
+                </Col> 
+                <Col sm="12" md="6">
+                    <Link to="/curso-reflexologia">
                     <Card inverse className="reflexologia">
                         <CardImg width="100%" src={reflex} alt="Card image cap" />
                         <div className="overlay">
@@ -46,9 +54,11 @@ export class Cursos extends Component {
                         </div>
 
                     </Card>
+                    </Link>
                 </Col>
                
                 <Col sm="12" md="6">
+                    <Link to="/curso-spa">
                     <Card inverse className="spa">
          <CardImg width="100%" src={spa} alt="Card image cap" />
          <div className="overlay">
@@ -59,10 +69,12 @@ export class Cursos extends Component {
              </CardImgOverlay>
          </div>
      </Card>
+                    </Link>
 
                 </Col>
 
                 <Col sm="12" md="6">
+                    <Link to="/curso-toksen">
                     <Card inverse className="Toksen">
                         <CardImg width="100%" src={Toksen} alt="Card image cap" />
                         <div className="overlay">
@@ -73,11 +85,13 @@ export class Cursos extends Component {
                             </CardImgOverlay>
                         </div>
                     </Card>
+                    </Link>
 
                 </Col>
 
 
                 <Col sm="12" md="6">
+                    <Link to="/retiro">
                     <Card inverse className="retiro">
          <CardImg width="100%" src={retiro} alt="Card image cap" />
          <div className="overlay">
@@ -88,6 +102,7 @@ export class Cursos extends Component {
              </CardImgOverlay>
          </div>
      </Card>
+                    </Link>
                 </Col>
           </Row>
       </Container>

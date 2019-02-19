@@ -6,9 +6,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    Col,
-    Container
+    NavLink
 } from 'reactstrap';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -31,24 +29,24 @@ export default class Menu extends React.Component {
     render() {
         return (<Navbar color="light" className="Menup" light expand="md">
             <NavbarBrand> 
-                <NavLink href="#HomePage">
-                 <img className="logoSmall" src={logoSmall} alt="Sabaai-logo" />    
+                <NavLink href="/#HomePage">
+                    <img className="logoSmall" src={logoSmall}  alt="Sabaai-logo" />    
                 </NavLink>   
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="mx-auto" navbar>
                     <NavItem>
-                        <NavLink className="Menu" href="#cursos-section">CURSO</NavLink>
+                        <NavLink to="/" className="Menu" href="/#cursos-section">CURSO</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="Menu" href="#nos-section">NÓS</NavLink>
+                        <NavLink className="Menu" href="/#nos-section">NÓS</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="Menu" href="#viagem-section">VIAGEM</NavLink>
+                        <NavLink className="Menu" href="/#viagem-section">VIAGEM</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className="Menu" href="#FaleConosco-section">CONTATO</NavLink>
+                        <NavLink className="Menu" href="/#FaleConosco-section">CONTATO</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>

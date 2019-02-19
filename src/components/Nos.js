@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media, Container, TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import { Container, TabContent, TabPane, Nav, NavItem, NavLink, Col } from 'reactstrap';
 import classnames from 'classnames';
 import marcicano from '../images/marcicano.jpg'
 import roberto from '../images/roberto.jpeg'

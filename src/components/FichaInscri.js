@@ -20,10 +20,12 @@ export class FichaInscri extends Component {
                         <option>Retiro</option>
                     </Input>
                     </FormGroup>
+
                     <FormGroup>
                         <Label for="exampleAddress">Nome Completo</Label>
                         <Input type="text" name="address" id="exampleAddress" placeholder="Nome Completo" />
                     </FormGroup>
+                    
                     <Row form>
                         <Col md={4}>
                             <FormGroup>
@@ -44,10 +46,12 @@ export class FichaInscri extends Component {
                             </FormGroup>
                         </Col>
                     </Row>
+                    
                     <FormGroup>
                         <Label for="exampleAddress">Endereço</Label>
                         <Input type="text" name="address" id="exampleAddress" placeholder="Endereço" />
                     </FormGroup>
+                    
                     <Row form>
                         <Col md={4}>
                             <FormGroup>

@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { Container, Jumbotron, TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import Footer from './Footer'
+import PreInsc from './PreInsc'
 
 export class ThaiMassagemPage extends Component {
     constructor(props) {
         super(props);
 
         this.toggle = this.toggle.bind(this);
+        this.toggle = this.toggle.bind(this);
         this.state = {
-            activeTab: '1'
+            activeTab: '1',
+            fadeIn: true
         };
     }
 
@@ -26,7 +28,23 @@ export class ThaiMassagemPage extends Component {
             <Jumbotron className="banner-curso">
                 <h2 className="display-3">Thai Massagem</h2>
             </Jumbotron>
-            
+            <PreInsc />
+            <Container>
+                
+                    <Col className="Prox-Cursos">
+                        <h3>Proximas <span className="Prox-Cursos-destaque">Turmas:</span></h3>
+                    </Col>
+                <Col className="Prox-Cursos-info">
+                        <h3>Belo Horizonte</h3>
+                        <p>Datas: 15, 16, 17 Mar | 22, 23, 24 Mar | 29, 30, 31 Mar</p>
+                        <p>Horário de realização: <br/>Sexta: 19:30 - 22:30, Sábados 10:30 - 19:30 e Domingos: 09:00 - 18:00</p>
+                        <h4>Endereco:</h4>
+                    <p>Rua Dona Salvadora, 89 - Serra (mapa)<br/>
+                        Belo Horizonte, MG 30220-230 (31) 3657-0607 | (31) 4141-1747<br />
+                        contato@espacovivabem.com.br</p>
+                    </Col>
+                
+            </Container>
        <Container>
                 <Nav tabs>
                     <NavItem>
@@ -99,7 +117,7 @@ export class ThaiMassagemPage extends Component {
                         </Row>
                     </TabPane>
                 </TabContent>
-                
+               
        </Container>
       </Container>
      

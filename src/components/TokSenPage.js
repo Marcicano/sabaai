@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Jumbotron, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 
-export class SpaThaiPage extends Component {
+export class TokSenPage extends Component {
     constructor(props) {
         super(props);
 
@@ -109,4 +109,4 @@ export class SpaThaiPage extends Component {
     }
 }
 
-export default SpaThaiPage
+export default TokSenPage

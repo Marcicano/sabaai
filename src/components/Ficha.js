@@ -45,22 +45,22 @@ export class Ficha extends Component {
                         <input type="text" placeholder="Nome" name="name" value={name} onChange={this.handleChange} />
                         <input type="email" placeholder="Email" name="email" value={email} onChange={this.handleChange} />
                         <input type="date" placeholder="Nome" name="dtnasc" value={dtnasc} onChange={this.handleChange} />
-                        <input type="text" placeholder="Email" name="email" value={cpf} onChange={this.handleChange} />
-                        <input type="text" placeholder="Email" name="endereco" value={endereco} onChange={this.handleChange} />
-                        <input type="text" placeholder="Email" name="bairro" value={bairro} onChange={this.handleChange} />
-                        <input type="text" placeholder="Email" name="cidade" value={cidade} onChange={this.handleChange} />
-                        <input type="text" placeholder="Email" name="cep" value={cep} onChange={this.handleChange} />
+                        <input type="text" placeholder="cpf" name="email" value={cpf} onChange={this.handleChange} />
+                        <input type="text" placeholder="endereco" name="endereco" value={endereco} onChange={this.handleChange} />
+                        <input type="text" placeholder="bairro" name="bairro" value={bairro} onChange={this.handleChange} />
+                        <input type="text" placeholder="cidade" name="cidade" value={cidade} onChange={this.handleChange} />
+                        <input type="text" placeholder="cep" name="cep" value={cep} onChange={this.handleChange} />
                         
                         <select type="select" name="selectITM" value={selectITM} onChange={this.handleChange}>
-                            <option>Sim  </option>
+                            <option>Sim </option>
                             <option>Nao</option>
                             <option>Decidirei mais tarde</option>
                         </select>
                         
-                        <select type="select" name="selectPgto" value={selectPgto} onChange={this.handleChange}>
+                        <selectcpf type="select" name="selectPgto" value={selectPgto} onChange={this.handleChange}>
                             <option>A vista</option>
                             <option>Parcelado no cartao de credito</option>
-                        </select>
+                        </selectcpf>
                     </Col>
 
                     <button type="submit" className="FaleConosco-Btn">Enviar</button>

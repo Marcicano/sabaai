@@ -10,11 +10,10 @@ const encode = (data) => {
 export class Ficha extends Component {
     constructor(props) {
         super(props);
-        this.state = { name: "", email: "", message: "" };
+        this.state = { name: "", email: "", selectcourse: "", dtnasc: "", cpf: "", endereco: "", bairro: "", cidade: "", cep: "", selectITM: "", selectPgto: "" };
     }
 
-    /* Here’s the juicy bit for posting the form submission */
-
+    /* Here’s the juicy bit for posting the form submission */I
     handleSubmit = e => {
         fetch("/", {
             method: "POST",
@@ -30,17 +29,38 @@ export class Ficha extends Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
-        const { name, email, message } = this.state;
+        const { selectcourse, name, email, dtnasc, cpf, endereco, bairro, cidade, cep, selectITM, selectPgto} = this.state;
         return (
             <Container>
                 <form onSubmit={this.handleSubmit}>
                     <Col x="12" md={{ size: 6, offset: 3 }} className="FaleConosco-content">
+                        <select type="select" name="selectcourse" value={selectcourse} onChange={this.handleChange}>
+                            <option>Curso Thai Massagem</option>
+                            <option>Curso Thai Massagem Compressa de Ervas</option>
+                            <option>Reflexologia Podal</option>
+                            <option>Spa Tailandes</option>
+                            <option>Tok Sen</option>
+                            <option>Retiro</option>
+                        </select>
                         <input type="text" placeholder="Nome" name="name" value={name} onChange={this.handleChange} />
                         <input type="email" placeholder="Email" name="email" value={email} onChange={this.handleChange} />
-                    </Col>
-
-                    <Col x="12" md={{ size: 6, offset: 3 }} className="FaleConosco-content">
-                        <textarea name="message" rows="5" placeholder="Mensagem" value={message} onChange={this.handleChange} />
+                        <input type="date" placeholder="Nome" name="dtnasc" value={dtnasc} onChange={this.handleChange} />
+                        <input type="text" placeholder="Email" name="email" value={cpf} onChange={this.handleChange} />
+                        <input type="text" placeholder="Email" name="endereco" value={endereco} onChange={this.handleChange} />
+                        <input type="text" placeholder="Email" name="bairro" value={bairro} onChange={this.handleChange} />
+                        <input type="text" placeholder="Email" name="cidade" value={cidade} onChange={this.handleChange} />
+                        <input type="text" placeholder="Email" name="cep" value={cep} onChange={this.handleChange} />
+                        
+                        <select type="select" name="selectITM" value={selectITM} onChange={this.handleChange}>
+                            <option>Sim  </option>
+                            <option>Nao</option>
+                            <option>Decidirei mais tarde</option>
+                        </select>
+                        
+                        <select type="select" name="selectPgto" value={selectPgto} onChange={this.handleChange}>
+                            <option>A vista</option>
+                            <option>Parcelado no cartao de credito</option>
+                        </select>
                     </Col>
 
                     <button type="submit" className="FaleConosco-Btn">Enviar</button>

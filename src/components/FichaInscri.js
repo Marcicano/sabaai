@@ -9,6 +9,7 @@ export class FichaInscri extends Component {
             </Jumbotron>
             <Container>
                 <Form>
+                    <FormGroup>
                     <Label for="exampleAddress">Escolha o Curso:</Label>
                     <Input type="select" name="select" id="exampleSelect">
                         <option>Curso Thai Massagem</option>
@@ -18,6 +19,7 @@ export class FichaInscri extends Component {
                         <option>Tok Sen</option>
                         <option>Retiro</option>
                     </Input>
+                    </FormGroup>
                     <FormGroup>
                         <Label for="exampleAddress">Nome Completo</Label>
                         <Input type="text" name="address" id="exampleAddress" placeholder="Nome Completo" />

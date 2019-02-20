@@ -418,8 +418,7 @@ h5 {
 
 .Prof-photo {
   grid-area: prof-photo;
-  max-width: 300px;
-  height: auto;
+  
   
 }
 
@@ -472,14 +471,14 @@ h5 {
 
 @media (min-width: 276px) and (max-width: 767.98px) {
   .Prof-content {
-  overflow: hidden;
+  
   border-radius: 10px;
   /* padding: 2em; */
   background-color: #fff;
   display: grid;
   justify-items: center;
   grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas: 
   "prof-photo"
   "prof-title"
@@ -487,13 +486,19 @@ h5 {
   
 }
 
-.imageTab {
+.Prof-photo  {
   /* visibility: hidden; */
   min-width: 20px;
+  margin: 0;
+}
+
+.imageTab{
+  margin: 0;
 }
 
 .Prof-title {
   grid-area: prof-title;
+  
 }
 
 .Prof-footer {

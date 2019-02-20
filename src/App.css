@@ -191,6 +191,14 @@
 
 }
 
+a:visited { 
+  color: white;
+}
+
+a:hover {
+  color: rgb(255, 166, 0);
+}
+
 h5 {
   text-align: center;
 }
@@ -482,8 +490,8 @@ h5 {
   background-color: #fff;
   display: grid;
   justify-items: center;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-columns:  auto;
+  grid-template-rows:  1fr;
   grid-template-areas: 
   "prof-photo"
   "prof-title"

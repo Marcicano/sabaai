@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Jumbotron, TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
+import PreInsc from './PreInsc'
 
 export class ReflexologiaPage extends Component {
     constructor(props) {
@@ -25,7 +26,23 @@ export class ReflexologiaPage extends Component {
                 <Jumbotron className="banner-curso">
                     <h2 className="display-3">Reflexologia</h2>
                 </Jumbotron>
+                <PreInsc />
+                <Container>
 
+                    <Col className="Prox-Cursos">
+                        <h3>Proximas <span className="Prox-Cursos-destaque">Turmas:</span></h3>
+                    </Col>
+                    <Col className="Prox-Cursos-info">
+                        <h3>Rio de Janeiro</h3>
+                        <p>Datas: 27 e 28 de Abril de 2019 </p>
+                        <p>Horário de realização: <br />Sábado e Domingo 09:00 - 17:00</p>
+                        <h4>Endereco:</h4>
+                        <p>Rua Dois de Dezembro, 119, Casa A - Flamengo (mapa)<br />
+                            Rio de Janeiro (21) 2557-2344<br />
+                            yoga.svadharma@gmail.com</p>
+                    </Col>
+
+                </Container>
                 <Container>
                     <Nav tabs>
                         <NavItem>

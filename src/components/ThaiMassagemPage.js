@@ -8,10 +8,10 @@ export class ThaiMassagemPage extends Component {
         super(props);
 
         this.toggle = this.toggle.bind(this);
-        this.toggle = this.toggle.bind(this);
+       
         this.state = {
-            activeTab: '1',
-            fadeIn: true
+            activeTab: '1'
+            
         };
     }
 

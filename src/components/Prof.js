@@ -60,7 +60,7 @@ export class Prof extends Component {
                 
                     <TabContent activeTab={this.state.activeTab}>
                         <TabPane tabId="1">
-                            <Col className="Prof-content">
+                            <Col sm="12" className="Prof-content">
                                 <div className="Prof-photo">
                                     <img src={marcicano} className="imageTab" alt="Prof. Anderson" />
                                 </div>

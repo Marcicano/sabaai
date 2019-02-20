@@ -185,6 +185,8 @@
   padding-top: 2em;
   padding-bottom: 2em;
   margin-bottom: 2em;
+  position: relative;
+  top: 1em;
   
 
 }
@@ -403,6 +405,7 @@ h5 {
 
 
 .Prof-content {
+  overflow: hidden;
   border-radius: 0 0 10px 10px;
   padding: 2em;
   background-color: #fff;
@@ -447,6 +450,8 @@ h5 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  top: 2em;
   
 }
 

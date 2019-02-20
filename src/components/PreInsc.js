@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Col, Row, Input, FormGroup, Label, Button, Form} from 'reactstrap'
+import {  Col, Row, Input, FormGroup, Button, Form} from 'reactstrap'
 export class PreInsc extends Component {
   render() {
     return (

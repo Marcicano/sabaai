@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Container, Jumbotron, Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap'
+import { Row, Col, Container, Jumbotron, Form, FormGroup, Label, Input } from 'reactstrap'
 export class FichaInscri extends Component {
   render() {
     return (

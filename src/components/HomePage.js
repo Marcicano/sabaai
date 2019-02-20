@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Hero from './Hero'
 import About from './Aboutus'
 import Cursos from './Cursos'
-import Nos from './Nos'
 import Viagem from './Viagem'
 import FaleConosco from './FaleConosco'
 
